@@ -29,7 +29,7 @@ app.use(cors())
 
 
 app.get('/', (req, res) => {
-    res.send(dataBase.users)
+    res.send('you are on root tree')
 })
 
 app.post('/singIn', singIn.handleSingIn(db, bcryptNodejs));
